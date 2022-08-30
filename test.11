@@ -10,14 +10,14 @@ echo >  $TEST.correct
 
 for keyword in  getline string  ; do
     ILLEGAL=`grep -n $keyword *.cc | grep -v include`
-    if [[ -n $ILLEGAL ]] ; then
+    if [ -n "$ILLEGAL" ] ; then
         echo "Not allowed to use '$keyword'" >> $TEST.myoutput
         echo $ILLEGAL >> $TEST.myoutput
     fi
 done
 
 ILLEGAL=`grep -n '\[[^]-]' *.cc | grep -v 'argv\[' `
-if [[ -n $ILLEGAL ]] ; then
+if [ -n "$ILLEGAL" ] ; then
     echo "Not allowed to use arrays" >> $TEST.myoutput
     echo $ILLEGAL >> $TEST.myoutput
 fi
