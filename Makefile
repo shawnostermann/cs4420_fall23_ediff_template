@@ -27,6 +27,7 @@ test: $(TARGET) testfiles
 	-./test.10
 	-./test.11
 	-./test.12
+	-./test.13
 
 clean:
 	rm -f $(TARGET) *.o test.*.* .unreadable_test_file 
