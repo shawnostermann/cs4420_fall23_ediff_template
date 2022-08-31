@@ -4,6 +4,7 @@
  *   simple text comparison using only system calls
  *
  * PUT OTHER INFORMATION ABOUT YOU AND ETC...
+ * this is the version to start with...
  *
  ************************************************************/
 
